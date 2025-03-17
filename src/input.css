@@ -1,0 +1,14 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+@import "tailwindcss";
+
+.input-breakline::-webkit-input-placeholder {
+  white-space: inherit;
+  top: -7px;
+  position: relative;
+}
+
+.input-breakline {
+  min-height: 50px;
+  min-width: 200px;
+}

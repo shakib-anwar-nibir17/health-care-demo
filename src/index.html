@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    class="bg-[url('../assets/bg-img.png')] bg-cover bg-center bg-no-repeat bg-fixed"
+  >
+    <div class="w-full max-w-[1280px] mx-auto">
+      <!-- Navbar  -->
+      <nav class="flex items-center justify-between mt-6 px-4 sm:px-6 lg:px-8">
+        <!-- Logo -->
+        <div class="text-white font-bold text-2xl">
+          <a href="#">
+            <img src="../assets/logo.png" alt="logo" class="w-[152px]" />
+          </a>
+        </div>
+
+        <!-- Hamburger Menu (Mobile) -->
+        <div class="lg:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links (Desktop) -->
+        <ul class="hidden lg:flex lg:space-x-10">
+          <li>
+            <a
+              href="#"
+              class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Why choose us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Blogs</a
+            >
+          </li>
+        </ul>
+
+        <!-- Login Button (Desktop) -->
+        <button
+          class="hidden lg:block text-white border-2 border-white rounded-full py-2 px-4 hover:bg-white/10 transition-all ease-in-out cursor-pointer"
+        >
+          Login to dashboard
+        </button>
+      </nav>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden absolute top-5 right-5 w-full max-w-[220px]"
+      >
+        <ul
+          class="flex flex-col space-y-3 bg-white rounded-2xl pt-8 px-4 pb-4 text-black"
+        >
+          <span
+            class="absolute top-4 right-4 cursor-pointer"
+            id="menu-toggle"
+            onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+          >
+            <?xml version="1.0" ?><svg
+              height="14px"
+              version="1.1"
+              viewBox="0 0 14 14"
+              width="14px"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <title />
+              <desc />
+              <defs />
+              <g
+                fill="none"
+                fill-rule="evenodd"
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+              >
+                <g
+                  fill="#000000"
+                  id="Core"
+                  transform="translate(-341.000000, -89.000000)"
+                >
+                  <g id="close" transform="translate(341.000000, 89.000000)">
+                    <path
+                      d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+                      id="Shape"
+                    />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </span>
+          <li>
+            <a
+              href="#"
+              class="text-sm md:text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-sm md:text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Why choose us</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-sm md:text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Features</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-sm md:text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-sm md:text-xl hover:border-b pb-1 transition-all ease-in-out"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <button
+              class="text-black border-2 border-black rounded-full py-2 px-4 hover:bg-white/10 transition-all ease-in-out cursor-pointer"
+            >
+              Login to dashboard
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero section -->
+      <section class="flex flex-col items-center justify-center h-[90vh]">
+        <!-- Heading -->
+        <div class="w-[332px] md:w-[730px] text-center">
+          <h1 class="text-white text-[40px] md:text-6xl font-semibold">
+            Nursing Homes & <br />
+            Assisted Living Facilities
+          </h1>
+          <p class="text-sm text-zinc-400 mt-5 mb-10">
+            Welcome to the Next Stage of Your Growth with GardianCare
+          </p>
+          <div
+            class="rounded-3xl p-px bg-gradient-to-l from-[#FA709A] to-[#FEE140] w-full max-w-[230px] mx-auto"
+          >
+            <button
+              class="w-full bg-white text-[14px] py-2 rounded-[calc(1.5rem-1px)] font-semibold"
+            >
+              Request a demo and quote
+            </button>
+          </div>
+        </div>
+        <!-- Chat section -->
+        <div
+          class="w-[335px] md:w-[1100px] bg-gradient-to-tl from-[#992F38]/20 to-[#1A152E]/20 backdrop-blur-xs mt-24 rounded-4xl border-2 border-zinc-500 md:border-zinc-700"
+        >
+          <!-- Texture img -->
+          <div></div>
+
+          <div class="text-center mt-10 w-[295px] md:w-full mx-auto">
+            <h2 class="text-2xl md:text-4xl text-white font-semibold">
+              Get Answers, Instantly: AI Search is Here.
+            </h2>
+            <p class="text-zinc-400 text-sm mt-3">
+              Ditch the endless links. AI finds your answers, fast.
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center mt-5 mb-10">
+            <p
+              class="absolute text-lg md:text-xl text-white left-10 top-48 md:left-16 md:top-[142px]"
+            >
+              How can i help you?
+            </p>
+            <input
+              type="text"
+              placeholder="You can write or say,"
+              class="w-[295px] md:w-[1010px] h-[88px] rounded-3xl text-sm bg-white/10 b text-gray-400 px-5 border border-zinc-400 md:border-zinc-500 pt-4"
+            />
+
+            <span
+              class="bg-white p-2 rounded-full absolute right-10 md:right-16"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                width="24"
+                height="24"
+                viewBox="0 0 256 256"
+                xml:space="preserve"
+              >
+                <defs></defs>
+                <g
+                  style="
+                    stroke: none;
+                    stroke-width: 0;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: none;
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                >
+                  <path
+                    d="M 45 70.968 c -16.013 0 -29.042 -13.028 -29.042 -29.042 c 0 -1.712 1.388 -3.099 3.099 -3.099 c 1.712 0 3.099 1.388 3.099 3.099 C 22.157 54.522 32.404 64.77 45 64.77 c 12.595 0 22.843 -10.248 22.843 -22.843 c 0 -1.712 1.387 -3.099 3.099 -3.099 s 3.099 1.388 3.099 3.099 C 74.042 57.94 61.013 70.968 45 70.968 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 45 60.738 L 45 60.738 c -10.285 0 -18.7 -8.415 -18.7 -18.7 V 18.7 C 26.3 8.415 34.715 0 45 0 h 0 c 10.285 0 18.7 8.415 18.7 18.7 v 23.337 C 63.7 52.322 55.285 60.738 45 60.738 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 45 89.213 c -1.712 0 -3.099 -1.387 -3.099 -3.099 V 68.655 c 0 -1.712 1.388 -3.099 3.099 -3.099 c 1.712 0 3.099 1.387 3.099 3.099 v 17.459 C 48.099 87.826 46.712 89.213 45 89.213 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 55.451 90 H 34.549 c -1.712 0 -3.099 -1.387 -3.099 -3.099 s 1.388 -3.099 3.099 -3.099 h 20.901 c 1.712 0 3.099 1.387 3.099 3.099 S 57.163 90 55.451 90 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+</html>
