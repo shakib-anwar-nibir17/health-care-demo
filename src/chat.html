@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>Chat</title>
+  </head>
+  <body
+    class="bg-[url('../assets/bg-img.png')] bg-cover bg-center bg-no-repeat bg-fixed"
+  >
+    <!-- Navigation Bar -->
+    <nav
+      class="flex items-center justify-between mt-6 px-4 sm:px-6 lg:px-8 w-full max-w-[1280px] mx-auto"
+    >
+      <!-- Logo -->
+      <div class="text-white font-bold text-2xl">
+        <a href="#">
+          <img src="../assets/logo.png" alt="logo" class="w-[152px]" />
+        </a>
+      </div>
+
+      <!-- Hamburger Menu (Mobile) -->
+      <div class="lg:hidden">
+        <button id="menu-toggle" class="text-white focus:outline-none">
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul class="hidden lg:flex lg:space-x-10">
+        <li>
+          <a
+            href="#"
+            class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+            >Why choose us</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+            >Features</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+            >Testimonials</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white text-xl hover:border-b pb-1 transition-all ease-in-out"
+            >Blogs</a
+          >
+        </li>
+      </ul>
+
+      <!-- Login Button (Desktop) -->
+      <button
+        class="hidden lg:block text-white border-2 border-white rounded-full py-2 px-4 hover:bg-white/10 transition-all ease-in-out cursor-pointer"
+      >
+        Login to dashboard
+      </button>
+    </nav>
+
+    <!-- Chat section -->
+    <section class="fixed bottom-5 left-0 w-full px-4 mlg:px-0">
+      <div
+        class="w-full max-w-[1400px] h-[80vh] mx-auto bg-gradient-to-tl from-[#992F38]/20 to-[#1A152E]/20 backdrop-blur-xs sm:mt-24 rounded-4xl border-2 border-zinc-500 md:border-zinc-700 pt-16 px-5 lg:px-0"
+      >
+        <span class="absolute top-4 right-5 cursor-pointer">
+          <?xml version="1.0" ?><svg
+            height="14px"
+            version="1.1"
+            viewBox="0 0 14 14"
+            width="14px"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <title />
+            <desc />
+            <defs />
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              id="Page-1"
+              stroke="none"
+              stroke-width="1"
+            >
+              <g
+                fill="#FFFFFF"
+                id="Core"
+                transform="translate(-341.000000, -89.000000)"
+              >
+                <g id="close" transform="translate(341.000000, 89.000000)">
+                  <path
+                    d="M14,1.4 L12.6,0 L7,5.6 L1.4,0 L0,1.4 L5.6,7 L0,12.6 L1.4,14 L7,8.4 L12.6,14 L14,12.6 L8.4,7 L14,1.4 Z"
+                    id="Shape"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </span>
+
+        <div class="h-full flex flex-col justify-end">
+          <!-- Chat Content -->
+          <div
+            class="flex flex-col gap-6 pb-6 sm:w-[295px] md:w-full lg:px-10 xl:px-0 xl:w-[1010px] mx-auto"
+          >
+            <div
+              class="self-end bg-white/5 px-3 py-1 md:px-5 md:py-4 rounded-3xl border-2 border-zinc-600 hidden lg:flex"
+            >
+              <p class="text-sm text-white">Lorem ipsum dolor sit amet, co</p>
+            </div>
+
+            <div class="text-white">
+              <p class="text-sm text-white hidden xs:flex">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+
+              <h2
+                class="text-xl md:text-2xl font-semibold md:mt-8 md:mb-4 mt-4 mb-2"
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </h2>
+
+              <ol class="list-decimal ml-6">
+                <li class="mb-2 text-sm opacity-90 font-semibold">
+                  eiusmod tempor: incididunt ut l
+                </li>
+              </ol>
+
+              <ul class="list-disc ml-6">
+                <li class="mb-2.5 text-sm opacity-90">
+                  eiusmod tempor incididunt ut labore et dolore magna a
+                </li>
+                <li class="mb-2.5 text-sm opacity-90">
+                  eiusmod tempor incididunt ut labore et dolore magna a
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="self-end bg-white/5 px-5 py-4 rounded-3xl border-2 border-zinc-600"
+            >
+              <p class="text-sm text-white">Lorem ipsum dolor sit amet, co</p>
+            </div>
+
+            <div class="self-start hidden md:flex">
+              <p class="text-sm text-white">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+
+          <!-- Chat input -->
+          <div class="flex justify-center items-center mt-5 mb-10 relative">
+            <p
+              class="absolute text-lg md:text-xl text-white left-9 xl:left-48 lg:left-36 md:left-28 top-4"
+            >
+              How can i help you?
+            </p>
+            <input
+              type="text"
+              placeholder="You can write or say,"
+              class="w-11/12 sm:w-9/12 h-[88px] rounded-4xl text-sm bg-white/10 b text-gray-400 px-5 border border-zinc-400 md:border-zinc-500 pt-4"
+            />
+
+            <span
+              class="bg-white p-2 rounded-full absolute right-10 lg:right-48 md:right-32"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                width="24"
+                height="24"
+                viewBox="0 0 256 256"
+                xml:space="preserve"
+              >
+                <defs></defs>
+                <g
+                  style="
+                    stroke: none;
+                    stroke-width: 0;
+                    stroke-dasharray: none;
+                    stroke-linecap: butt;
+                    stroke-linejoin: miter;
+                    stroke-miterlimit: 10;
+                    fill: none;
+                    fill-rule: nonzero;
+                    opacity: 1;
+                  "
+                  transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)"
+                >
+                  <path
+                    d="M 45 70.968 c -16.013 0 -29.042 -13.028 -29.042 -29.042 c 0 -1.712 1.388 -3.099 3.099 -3.099 c 1.712 0 3.099 1.388 3.099 3.099 C 22.157 54.522 32.404 64.77 45 64.77 c 12.595 0 22.843 -10.248 22.843 -22.843 c 0 -1.712 1.387 -3.099 3.099 -3.099 s 3.099 1.388 3.099 3.099 C 74.042 57.94 61.013 70.968 45 70.968 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 45 60.738 L 45 60.738 c -10.285 0 -18.7 -8.415 -18.7 -18.7 V 18.7 C 26.3 8.415 34.715 0 45 0 h 0 c 10.285 0 18.7 8.415 18.7 18.7 v 23.337 C 63.7 52.322 55.285 60.738 45 60.738 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 45 89.213 c -1.712 0 -3.099 -1.387 -3.099 -3.099 V 68.655 c 0 -1.712 1.388 -3.099 3.099 -3.099 c 1.712 0 3.099 1.387 3.099 3.099 v 17.459 C 48.099 87.826 46.712 89.213 45 89.213 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M 55.451 90 H 34.549 c -1.712 0 -3.099 -1.387 -3.099 -3.099 s 1.388 -3.099 3.099 -3.099 h 20.901 c 1.712 0 3.099 1.387 3.099 3.099 S 57.163 90 55.451 90 z"
+                    style="
+                      stroke: none;
+                      stroke-width: 1;
+                      stroke-dasharray: none;
+                      stroke-linecap: butt;
+                      stroke-linejoin: miter;
+                      stroke-miterlimit: 10;
+                      fill: rgb(0, 0, 0);
+                      fill-rule: nonzero;
+                      opacity: 1;
+                    "
+                    transform=" matrix(1 0 0 1 0 0) "
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
